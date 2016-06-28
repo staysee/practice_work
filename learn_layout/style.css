@@ -1,0 +1,35 @@
+.paragraph-block{
+  border: 2px solid red;
+}
+
+#main{
+  border: 2px solid orange;
+  width: 600px;
+  /*max-width: 600px;*/
+  margin: 0 auto;
+}
+
+#main-max-width{
+  border: 2px solid orange;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.simple{
+  border: 5px solid green;
+  width: 500px;
+  margin: 20px auto;
+}
+
+.fancy{
+  border: 5px solid green;
+  width: 500px;
+  margin: 20px auto;
+  padding: 50px;
+}
+
+.box-size{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learn CSS Layout</title>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Learn CSS Layout Practice</h1>
+
+<div class="paragraph-block">
+  <p>This div is the standard block-level element. A block-level element starts on a new line and stretches out to the left and right as far as it can. Other common block-level elements are p and form, and new in HTML5 are header, footer, section, and more.</p>
+</div>
+
+<div id="main">
+Setting the <b>width</b> of a block-level element will prevent it from stretching out to the edges of its container to the left and right. <b>( margin: 0 auto)</b> Then, you can set the left and right margins to auto to horizontally center that element within its container. The element will take up the width you specify, then the remaining space will be split evenly between the two margins.
+</div>
+
+<div id="main-max-width">
+The only problem occurs when the browser window is narrower than the width of your element. The browser resolves this by creating a horizontal scrollbar on the page. <b>Using max-width instead of width</b> in this situation will improve the browser's handling of small windows. This is important when making a site usable on mobile. Resize this page to check it out!
+</div>
+
+<h2>THE BOX MODEL</h2>
+<div class="simple">
+This div has a width of 500px, and margin of 20px auto.
+</div>
+
+<div class="fancy">
+This div also has a width of 500px, and margin of 20px auto, but has padding and border width.
+</div>
+
+<h3>BOX-SIZING</h3>
+<p>box-model considered unintuitive so box-sizing was created. When you set <b>box-sizing: border-box;</b> on an element, the padding and border of that element no longer increase its width.</p>
+<p>Some people want all elements on all their pages to work this way so people use the universal styling with "*" for box-sizing. Use the <b>-webkit-</b>and<b>-moz-</b> prefixes since it is new and not standard across all browsers</p>
+
+<div class="simple box-size">
+This div is the same same as the "simple" div with box-size added to it.
+</div>
+
+<div class="fancy box-size">
+This div is the same same as the "fancy" div with box-size added to it.
+</div>
+
+<h2> POSITION</h2>
+
+</body>
+</html>
