@@ -44,6 +44,46 @@ This div is the same same as the "fancy" div with box-size added to it.
 </div>
 
 <h2> POSITION</h2>
+<h5>static</h5>
+<div class="static">
+<b>static</b> is the default value. An element with <b>position: static;</b> is not positioned in any special way. A static element is said to be <i>not positioned</i> and an element with its position set to anything else is said to be <i>positioned</i>.
+</div>
+
+<h5>relative</h5>
+<div class="relative1">
+<b>relative</b> behaves the same was as <b>static</b> unless you add some extra properties.
+</div>
+
+<div class="relative2">
+Setting the <b>top, right, bottom, and left</b> properties of a relatively-positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+</div>
+
+<h5>fixed</h5>
+A <b>fixed</b> element is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. As with relative, the <b>top, right, bottom, and left</b> properties are used.
+
+<div class="fixed">
+This is a <b>fixed div</b>. It doesn't leave a gap in the page where it would normally have been located.
+</div>
+
+<h5>absolute</h5>
+<p>The trickiest position value. <b>absolute</b> behaves liked <b>fixed</b> except relative to <i>the nearest positioned ancestor</i> instead of relative to the viewport.</p>
+<p>If an absolutely-positioned element has no positioned ancestors, it uses the document body, and still moves along with page scrolling. Remember, a "positioned" element is one whose position is anything except <b>static</b></p>
+
+<div class="relative">
+This element is <b>relatively-positioned</b>. If this element was <b>position: static;</b> its absolutely-positioned child would escape and would be positioned relative to the document body.
+
+  <div class="absolute">
+  This is a child element of the outer box. It is <b>absolutely-positioned</b>. It's positioned relative to its parent.
+  </div>
+</div>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
