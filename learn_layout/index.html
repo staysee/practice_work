@@ -80,6 +80,44 @@ This element is <b>relatively-positioned</b>. If this element was <b>position: s
 
 <a href="pages/page2.html">Click here for a realistic example of positioning</a>
 
+<hr>
+
+<h2>Floats</h2>
+Float is intended for wrapping text around images. The image is floated to the right.
+
+<div class="content">
+  <p>
+  <img src="apple.jpg">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+  cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+  proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<h3>clear</h3>
+The <b>clear</b> property is important for controlling behavior of <b>float</b>.
+<br>
+<h6>example 1</h6>
+
+  <div class="box">
+  I feel like I'm floating!
+  </div>
+
+  <div class="section1">
+    <p>This section1 div is actually <b>after the div</b>. However, since the <b>box div is floated to the left</b>, this is what happens: the text in the section is floated around the div and the section surrounds the whole thing. What if we wanted the section to actually appear after the floated element?</p>
+  </div>
+
+<h6>example 2</h6>
+  <div class="box">
+  I feel like I'm floating!
+  </div>
+
+  <div class="section2">
+    <p>Using <b>clear: left;</b> we have now moved this section down below the floated div. You use the value <b>left</b> to <b>clear</b> elements floated to the left. You can also <b>clear right</b>and <b>both</b>.</p>
+  </div>
+
 
 </body>
 </html>

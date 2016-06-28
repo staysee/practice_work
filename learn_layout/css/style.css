@@ -78,6 +78,40 @@
   height: 200px;
 }
 
+/*Floats and Clears*/
+.content{
+  border: 2px solid green;
+  max-width: 600px;
+}
+p{
+  margin: 0;
+  font-size: 18px;
+}
+img{
+  float: right;
+  border: 2px solid red;
+  height: 100px;
+  margin: 0 0 1em 1em;
+}
+
+.box{
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+  border: 2px solid green;
+}
+
+.section1{
+  border: 2px solid purple;
+  max-width: 700px;
+}
+
+.section2{
+  border: 2px solid purple;
+  max-width: 700px;
+  clear: left;
+}
 
 
 
