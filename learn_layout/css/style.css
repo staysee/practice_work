@@ -129,6 +129,30 @@ p{
   overflow: auto;
 }
 
+.label{
+  top: 0;
+  left: 0;
+  padding: 0 3px 3px 0;
+  background-color: #7E7D82;
+}
+
+.after-box{
+  border: 2px solid orange;
+  clear: left;
+}
+
+.box2{
+  display: inline-block;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
+  border: 2px solid blue;
+}
+
+.after-box2{
+  border: 2px solid orange;
+}
+
 
 
 

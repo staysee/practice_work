@@ -82,6 +82,8 @@ This element is <b>relatively-positioned</b>. If this element was <b>position: s
 
 <hr>
 
+<!-- FLOATS & CLEARS-->
+
 <h2>Floats</h2>
 Float is intended for wrapping text around images. The image is floated to the right.
 
@@ -134,9 +136,78 @@ We can fix this using the <b>clearfix hack</b>.
 This uses the <b>.clearfix</b> class  and <b>overflow: auto;</b>...Much better!
 </div>
 
+<br>
+
 <p>
   <a href="pages/page3.html">This is the same example in positions, but using floats instead</a>
 </p>
+
+<hr>
+
+<!-- PERCENTS -->
+<h2>PERCENT WIDTH</h2>
+Percent is a measurement unit <b>relative to the containing block</b>. It's great for <b>images</b>.
+
+<!-- INLINE BLOCK -->
+<h2>INLINE-BLOCK</h2>
+
+<h5>Using float and clear</h5>
+<div class="box">
+<span class="label">"box"</span>
+  I'm floating!
+</div>
+<div class="box">
+<span class="label">"box"</span>
+  I'm floating!
+</div>
+<div class="box">
+<span class="label">"box"</span>
+  I'm floating!
+</div>
+<div class="box">
+<span class="label">"box"</span>
+  I'm floating!
+</div>
+<div class="box">
+<span class="label">"box"</span>
+  I'm floating!
+</div>
+
+<div class="after-box">
+<span class="label">"after-box"</span>
+I'm using <b>clear</b> so I don't float next to the above boxes.
+</div>
+
+<h5>Using inline-block</h5>
+
+<div class="box2">
+<span class="label">"box2"</span>
+I'm an in-line block
+</div>
+<div class="box2">
+<span class="label">"box2"</span>
+I'm an in-line block
+</div>
+<div class="box2">
+<span class="label">"box2"</span>
+I'm an in-line block
+</div>
+<div class="box2">
+<span class="label">"box2"</span>
+I'm an in-line block
+</div>
+<div class="box2">
+<span class="label">"box2"</span>
+I'm an in-line block
+</div>
+
+<div class="after-box2">
+I don't need to use <b>clear</b> for this box.
+</div>
+
+<br>
+<a href="pages/page4.html">Click here for in-line block layout example"</a>
+
 
 
 </body>

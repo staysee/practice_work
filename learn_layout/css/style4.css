@@ -1,0 +1,38 @@
+.label{
+  top: 0;
+  left: 0;
+  padding: 0 3px 3px 0;
+  background-color: #7E7D82;
+  position: absolute;
+}
+
+
+body{
+  font-size: 20px;
+}
+
+.container{
+  position: relative;
+  border: 2px solid green;
+}
+
+nav{
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+  border: 2px solid pink;
+}
+
+.column{
+  display: inline-block;
+  width: 74%;
+  vertical-align: top;
+  border: 2px solid red;
+}
+
+section{
+  /*position is static by default*/
+  border: 2px solid orange;
+}
+
+
