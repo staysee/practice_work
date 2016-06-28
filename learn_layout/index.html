@@ -87,7 +87,7 @@ Float is intended for wrapping text around images. The image is floated to the r
 
 <div class="content">
   <p>
-  <img src="apple.jpg">
+  <img class="img-float" src="apple.jpg">
   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -117,6 +117,26 @@ The <b>clear</b> property is important for controlling behavior of <b>float</b>.
   <div class="section2">
     <p>Using <b>clear: left;</b> we have now moved this section down below the floated div. You use the value <b>left</b> to <b>clear</b> elements floated to the left. You can also <b>clear right</b>and <b>both</b>.</p>
   </div>
+
+<h3>clearfix hack</h3>
+
+<div class="section-clearfix">
+<img class="img-clear" src="apple.jpg">
+Uh oh...this image is taller than the element containing it, and it's floated, so it's overflowing outside the container!
+</div>
+
+<br>
+We can fix this using the <b>clearfix hack</b>.
+
+
+<div class="clearfix">
+<img class="img-clear" src="apple.jpg">
+This uses the <b>.clearfix</b> class  and <b>overflow: auto;</b>...Much better!
+</div>
+
+<p>
+  <a href="pages/page3.html">This is the same example in positions, but using floats instead</a>
+</p>
 
 
 </body>

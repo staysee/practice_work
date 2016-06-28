@@ -87,7 +87,7 @@ p{
   margin: 0;
   font-size: 18px;
 }
-img{
+.img-float{
   float: right;
   border: 2px solid red;
   height: 100px;
@@ -111,6 +111,22 @@ img{
   border: 2px solid purple;
   max-width: 700px;
   clear: left;
+}
+
+.img-clear{
+  float: right;
+  height: 200px;
+}
+.section-clearfix{
+  font-size: 18px;
+  border: 2px solid red;
+  max-width: 600px;
+  position: relative;
+}
+
+.clearfix{
+  border: 2px solid blue;
+  overflow: auto;
 }
 
 

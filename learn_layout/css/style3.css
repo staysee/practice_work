@@ -1,0 +1,29 @@
+.label{
+  top: 0;
+  left: 0;
+  padding: 0 3px 3px 0;
+  background-color: #7E7D82;
+}
+
+
+body{
+  font-size: 20px;
+}
+
+.container{
+  position: relative;
+  border: 2px solid green;
+}
+
+nav{
+  float: left;
+  border: 2px solid pink;
+}
+
+section{
+  /*position is static by default*/
+  border: 2px solid orange;
+  margin-left: 200px;
+}
+
+
