@@ -1,7 +1,57 @@
 body{
-
+  background-color: #D7D7D7;
+  font-family: helvetica;
 }
 
 header{
+  background-image: url('../images/background.jpg');
+  text-align: center;
+}
 
+main{
+  width: 1000px;
+  margin: 30px auto;
+}
+
+section{
+  background-color: white;
+  width: 700px;
+  float: left;
+}
+
+article{
+  padding: 20px;
+  margin: 0 auto;
+  width: 86%;
+  border-bottom: 1px solid black;
+}
+
+article hr{
+  border-top: 1px dotted;
+}
+
+article a{
+  color: red;
+  text-decoration: none;
+}
+
+nav{
+  width: 280px;
+  background-color: white;
+  float: right;
+}
+
+footer{
+  text-align: center;
+  clear: both;
+  padding: 30px;
+}
+
+ul{
+  list-style: none;
+}
+
+.ads{
+  padding: 10px 20px;
+  border-radius: 20px;
 }
