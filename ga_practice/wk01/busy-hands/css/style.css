@@ -13,6 +13,13 @@ li{
   list-style: none;
 }
 
+h1{
+  background: url('../images/logo.png') no-repeat;
+  height: 54px;
+  width: 290px;
+
+}
+
 /*********************
 NAV
 *********************/
@@ -26,6 +33,7 @@ nav li{
 
 nav a{
   color: gray;
+  padding:36px 18px 0 18px;
 }
 /*********************
 SOCIAL MEDIA
@@ -42,6 +50,18 @@ HOME BOXES
 /*********************
 FOOTER
 *********************/
+
+/*********************
+EXTRAS
+*********************/
+
+.hide-text{
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+    /*Scott Kellum(2012) method of image replacement*/
+
 
 
 
