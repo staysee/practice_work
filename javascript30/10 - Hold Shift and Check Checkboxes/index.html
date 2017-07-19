@@ -13,9 +13,16 @@
     background: #ffc600;
   }
 
+  #title {
+    color: #CF3D96;
+    text-align: center;
+    font-size: 25px;
+    margin: 0 auto
+  }
+
   .inbox {
     max-width: 400px;
-    margin: 50px auto;
+    margin: 30px auto;
     background: white;
     border-radius: 5px;
     box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
@@ -56,6 +63,9 @@ The following is a common layout you would see in an email client.
 
 When a user clicks on a checkbox, holds Shift, and then clicks on another checkbox a few rows down all the checkboxes inbetween those two checkboxes should be checked.
 -->
+  <div id="title">
+    <h1>My To Do Checklist</h1>
+  </div>
   <div class="inbox">
     <div class="item">
       <input type="checkbox">
@@ -103,6 +113,46 @@ When a user clicks on a checkbox, holds Shift, and then clicks on another checkb
     </div>
 
   </div> <!-- end of div inbox -->
+
+
+
+
+  <script>
+  const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
+  // console.log(checkboxes)
+
+  let lastChecked;
+
+  function handleCheck(e) {
+    // console.log(e);
+
+    // Check if they had the Shift key down
+    // AND check that they are checking it
+    let inBetween = false;
+
+    if(e.shiftKey && this.checked){
+      // go ahead and do what we please
+      // loop over every single checkbox
+      checkboxes.forEach( checkbox => {
+        console.log(checkbox);
+        if(checkbox === this || checkbox === lastChecked){
+          inBetween = !inBetween;
+          console.log('Starting to check them inbetween!');
+        }
+
+        if(inBetween){
+          checkbox.checked = true;
+        }
+      });
+    }
+
+    lastChecked = this;
+  }
+
+  checkboxes.forEach( checkbox => checkbox.addEventListener('click', handleCheck));
+
+
+  </script>
 
 </body>
 </html>
